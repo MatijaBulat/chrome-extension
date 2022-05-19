@@ -18,6 +18,7 @@ if (urlsFromLocalStorage) {
 btnSaveInput.addEventListener("click", function () {
   if (!urlInput.value.length) {
     alert("Please fill required field");
+    urlInput.focus();
     return false;
   } else if (!isValidURL(urlInput.value)) {
     alert("Invalid URL");
